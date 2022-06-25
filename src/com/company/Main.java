@@ -71,5 +71,33 @@ public class Main {
             System.out.println("Got some remainder.");
         }
 
+        int scoreOne = calculateHighScorePosition(1500);
+        displayHighScorePosition("Boy", scoreOne);
+        scoreOne = calculateHighScorePosition(900);
+        displayHighScorePosition("Tim", scoreOne);
+        scoreOne = calculateHighScorePosition(400);
+        displayHighScorePosition("Toy", scoreOne);
+        scoreOne = calculateHighScorePosition(50);
+        displayHighScorePosition("Yam", scoreOne);
+        scoreOne = calculateHighScorePosition(1000);
+        displayHighScorePosition("John", scoreOne);
+
     }
+
+    public static void displayHighScorePosition(String name, int position) {
+        System.out.println(name + " managed to get into position " + position + " on the high score table");
+    }
+
+    public static int calculateHighScorePosition(int score) {
+        if (score >= 1000) {
+            return 1;
+        } else if (score >= 500 && score < 1000) {
+            return 2;
+        } else if (score >= 100 && score < 500) {
+            return 3;
+        }
+        return 4;
+    }
+
+
 }
