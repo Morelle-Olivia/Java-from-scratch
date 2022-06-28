@@ -4,6 +4,10 @@ public class module4Excercises {
 
     public static void main(String[] args) {
         checkNumber(-1);
+        long miles = speedConverter.toMilesPerHour(10.5);
+        System.out.println("Miles " + miles);
+
+        speedConverter.printConversion(10.5);
     }
 
     public static void checkNumber(int number){
@@ -16,4 +20,6 @@ public class module4Excercises {
             System.out.println("Zero");
         }
     }
+
+
 }
