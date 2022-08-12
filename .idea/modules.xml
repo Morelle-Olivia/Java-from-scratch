@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ByteIntLong.iml" filepath="$PROJECT_DIR$/ByteIntLong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaCoursesFromScratch.iml" filepath="$PROJECT_DIR$/JavaCoursesFromScratch.iml" />
     </modules>
   </component>
 </project>
