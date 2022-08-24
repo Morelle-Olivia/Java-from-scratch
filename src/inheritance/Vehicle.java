@@ -1,4 +1,4 @@
-package com.company;
+package inheritance;
 
 public class Vehicle {
     private int steering;
