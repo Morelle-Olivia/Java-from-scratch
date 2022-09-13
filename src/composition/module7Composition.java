@@ -1,5 +1,8 @@
 package composition;
 
+import Encapsulation.Printer;
+import Polymorphism.Car;
+
 public class module7Composition {
     public static void main(String[] args) {
         Wall wall1 = new Wall("West");
@@ -17,5 +20,16 @@ public class module7Composition {
         bedRoom.makeBed();
 
         bedRoom.getLamp().turnOn();
+
+        Printer printer = new Printer(50, true);
+        System.out.println("initial page count = "+ printer.getPagesPrinted());
+        int pagesPrinted = printer.printPages(4);
+        System.out.println("Pages printed was "+ pagesPrinted + " new total print.");
+
+        Car car = new Car( "Base Car", 8);
+        System.out.println(car.accelerate());
+        System.out.println(car.startEngine());
+        System.out.println(car.brake());
+
     }
 }
